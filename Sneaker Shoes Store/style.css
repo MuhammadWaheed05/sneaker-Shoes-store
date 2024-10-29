@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red;x */
+}
+.store{
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 22px 0px;
+    
+}
+.store > h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+
+}
+.store .shoesContainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.store .shoesCard{
+    width: 28%;
+    padding: 10px;
+    /* height: 560px; */
+    /* border: 1px solid red; */
+    border-radius: 30px;
+    box-shadow: 7px 7px 10px rgb(201, 201, 201);
+    overflow: hidden;
+}
+.store .shoesCard .image{
+    width: 100%;
+    height: 400px;
+    /* padding: 5px; */
+    overflow: hidden;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+}
+.store .shoesCard .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+}
+.store .shoesCard .image img:hover{
+    scale: 1.2;
+    transition-duration: 0.6s;
+}
+.store .shoesCard .detail{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 15px;
+}
+.store .shoesCard .detail > p{
+    font-size: 1.3rem;
+    line-height: 26px;
+    font-weight: 600;
+ }
+ .store .shoesCard .detail > p span{
+    font-weight: 400;
+    font-size: 1.2rem;
+ }
+ .store .shoesCard .detail img{
+   max-width: 37px;
+ }
+
+ @media (max-width:625px) {
+    .store .shoesCard {
+        width: 100%;
+    }
+ }
+
+ @media (min-width:630px) {
+    .store .shoesCard {
+        width: 48%;
+    }
+ }
+ @media (min-width:800px) {
+    .store .shoesCard {
+        width: 30%;
+    }
+ }
+
+ 
